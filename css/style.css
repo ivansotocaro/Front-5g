@@ -62,27 +62,57 @@ body {
   text-align:center
 }
 
-/* inputs */
-/* .main__container-inputs{
-  display: flex;
-  flex-direction: column;
+.container {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 30px;
 }
 
-.main__container-inputs input{
-  width: 368px;
-  height: 56px;
-  background: var(--input-bg-color) 0% 0% no-repeat padding-box;
-  border-radius: 12px;
-  border: none;
+.container label {
+    position: absolute;
+    top: 14px;
+    font-size: 16px;
+    line-height: 22px;
+    /* left: 5px; */
+    left: 143px;
+    color: var(--main-color);
+    transition: transform 0.3s ease;
+    letter-spacing: 0px;
 }
 
-.main__container-inputs .input-user{
-  margin-bottom: 16px;
+.container input[inp="text"] {
+    width: 368px;
+    height: 56px;
+    background: var(--input-bg-color) 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    color: #969696;
+    padding: 5px;
+    /* padding-left: 30px; */
+    border: none;
+    outline: none;
+    transition:  0.3s ease;
 }
 
-.main__container-inputs .input-password{
-  margin-bottom: 72px;
+/* .container input[type="text"]:focus {
+    background-color: #ffffff;
 } */
+
+.container input[inp="text"]:focus + label {
+    transform: translateY(-12px);
+    padding-left: 7px;
+    font-size: 12px;
+    color: var(--main-color);
+    font-size: 12px;
+}
+
+.effect{
+  transform: translateY(-12px);
+  padding-left: 7px;
+  font-size: 12px !important;
+  color: var(--main-color);
+  font-size: 12px;
+}
+/* input fin */
 
 
 .main__container-button{
