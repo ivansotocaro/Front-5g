@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christofferson Robb & Company</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+     <style>
+        .container {
+            display: inline-block;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .container label {
+            position: absolute;
+            top: 14px;
+            /* left: 5px; */
+            left: 136px;
+            color: #999;
+            transition: transform 0.3s ease;
+         
+        }
+
+        .container input[type="text"] {
+            width: 368px;
+            height: 56px;
+            background: var(--input-bg-color) 0% 0% no-repeat padding-box;
+            border-radius: 12px;
+            padding: 5px;
+            padding-left: 30px;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            transition:  0.3s ease;
+        }
+
+        /* .container input[type="text"]:focus {
+            background-color: #ffffff;
+        } */
+
+        .container input[type="text"]:focus + label {
+            transform: translateY(-15px);
+            font-size: 12px;
+            color: #007bff;
+        }
+    </style>
+  </head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <img class="header__container__img" src="img/CRC_logo negativo.png" alt="logo">
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="main__container">
+
+      <h2 class="main__container-title">Log In</h2>
+      
+      <!-- <div class="main__container-inputs">
+        <input type="text" class="input-user" placeholder="username">
+        <input type="text" class="input-password" placeholder="username">
+      </div> -->
+      <div class="container">
+          <input type="text" id="inputText">
+          <label for="inputText">Username</label>
+      </div>
+
+      <div class="container">
+          <input type="text" id="inputText">
+          <label for="inputText">Username</label>
+      </div>
+
+      <center> 
+        <button type="button" class="main__container-button">
+          <span class="button-text">Go!</span>
+        </button>
+      </center>
+      
+      <div class="main__container-forgot">
+        <a href="#" class="forgot-text">Forgot my password?</a>
+      </div>
+
+    </section>
+  </main>
+    
+
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
