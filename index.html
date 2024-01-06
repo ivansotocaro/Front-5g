@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christofferson Robb & Company</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/login/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/global.css">
   </head>
 <body>
 
@@ -18,23 +19,19 @@
     <section class="main__container">
 
       <h2 class="main__container-title">Log In</h2>
-      
-      <!-- <div class="main__container-inputs">
-        <input type="text" class="input-user" placeholder="username">
-        <input type="text" class="input-password" placeholder="username">
-      </div> -->
+
       <div class="container">
-          <input type="text" inp="text" onchange="checkInput(this);" id="inputText" style="text-align: center">
+          <input type="text" class="userInput" inp="text" onchange="checkInput(this);" id="inputText" style="text-align: center">
           <label for="inputText"  class="user">Username</label>
       </div>
 
       <div class="container">
-          <input type="password"  inp="text" id="inputText" onchange="checkInput2(this);" style="text-align: center">
+          <input type="password" class="passInput" inp="text" id="inputText" onchange="checkInput2(this);" style="text-align: center">
           <label for="inputText" class="pass">password</label>
       </div>
 
       <center> 
-        <button type="button"  class="main__container-button">
+        <button type="button"  class="main__container-button" id="go">
           <span class="button-text">Go!</span>
         </button>
       </center>
@@ -47,7 +44,10 @@
   </main>
     
 
-
-    <script src="js/script.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <script src="js/login/script.js"></script>
 </body>
 </html> 
