@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christofferson Robb & Company</title>
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/user/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+  </head>
+<body>
+
+  <header class="header">
+
+    <div class="header__container">
+      <img class="header__container__img" src="../img/dashboard.png" alt="logo">
+    </div>
+
+    <div class="header__container_logout">
+      <a href="#">Log out</a>
+    </div>
+  </header>
+
+
+  <section class="section__title__user">
+    <div class="section__title__user__container">
+      <p>Show preview</p>
+      <button class="show-modal">Create user</button>
+    </div>
+      
+  </section> 
+
+
+  <div class="section__table">
+
+      <table >
+
+        <thead>
+
+          <tr>
+            <th>Documento</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Monto</th>
+            <th>Fecha pago</th>
+            <th>Fecha limite</th>
+          </tr>
+
+        </thead>
+
+        <tbody id="tablePreview">
+          
+        </tbody>
+
+      </table>
+
+  </div>
+
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous">
+  </script>
+  <script src="../js/preview/index.js"></script>
+</body>
+</html> 

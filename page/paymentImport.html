@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christofferson Robb & Company</title>
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/user/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/paymentImport/index.css">
+  </head>
+<section>
+
+  <header class="header">
+
+    <div class="header__container">
+      <img class="header__container__img" src="../img/dashboard.png" alt="logo">
+    </div>
+
+    <div class="header__container_logout">
+      <a href="#">Log out</a>
+    </div>
+  </header>
+
+  <section class="section__title__user section__container-text">
+    <div class="section__title__user__container">
+      <p>Import payments</p>
+      <div></div>
+    </div>
+      
+  </section>
+
+<!-- adelantar back y luego hacer el diseño -->
+
+  <section class="container__file__components">
+
+    <div class="container__file__components-text">
+      <p>Upload File</p>
+    </div>
+
+    <div class="container__file__components-inputfile">
+      <input type="file" 
+      name="file" id="fileImport" accept=".xls,.xlsx">
+      <label for="fileImport">Select a file(.xlsx .cvs)</label>
+    </div>
+    
+
+    <div class="container__file__components-buttons">
+      <button id="earringsBtn">Earrings</button>
+      <button id="confirmationsBtn">Confirmations</button>
+    </div>
+
+  </section>
+  
+
+
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.3/xlsx.full.min.js"></script>
+  <script src="../js/paymentImport/index.js"></script>
+</body>
+</html> 
+

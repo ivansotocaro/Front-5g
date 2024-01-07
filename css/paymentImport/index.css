@@ -1,0 +1,67 @@
+.section__container-text-payment{
+  margin-top: 20px;
+}
+
+.section__container-text-payment div p{
+  font-size: 20px;
+}
+
+.container__file__components{
+  width: 944px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 120px;
+}
+
+.container__file__components-text{
+  display: flex;
+  justify-content: center;
+  height: 36px;
+  margin-bottom: 28px;
+}
+
+.container__file__components-text p{
+  font: normal normal bold 24px/33px Open Sans;
+  letter-spacing: 0px;
+  color: #434343;
+}
+
+.container__file__components-inputfile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  color: blue;
+  margin-bottom: 52px;
+}
+.container__file__components-inputfile input[type="file"] {
+  display: none;
+}
+
+.container__file__components-inputfile label{
+  color: black;
+}
+
+
+.container__file__components-buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 560px;
+  margin: 0 auto;
+}
+
+.container__file__components-buttons button{
+  width: 176px;
+  height: 44px;
+  background: #FF9553;
+  box-shadow: 0px 10px 20px #FC620333;
+  border-radius: 22px;
+  border: none;
+  text-align: center;
+  font: normal normal bold 14px/19px Open Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
