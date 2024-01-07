@@ -1,0 +1,116 @@
+.section__title__user{
+  width: 1280px;
+  height: 88px;
+  display: flex;
+  align-items: center
+}
+
+.section__title__user__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1180px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.section__title__user__container p{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #434343;
+  padding-left: 12px;
+}
+.section__title__user__container button{
+  width: 220px;
+  height: 48px;
+  font: normal normal bold 14px/16px Sofia Pro;
+  color: var(--second-color);
+  border: none;
+  background: #FF9553 0% 0% no-repeat padding-box;
+  letter-spacing: 0px;
+  border-radius: 24px;
+}
+
+.section__table table{
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.section__table table th, td{
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  font: normal normal bold 14px/16px Sofia Pro;
+}
+
+.section__table table thead{
+  font-size: 14px;
+  font-weight: normal;
+  background-color: #FFE7CE;
+}
+
+tr:nth-child(even){
+  background-color: #ececec;
+}
+
+tr{
+  height: 48px;
+}
+
+
+
+/* Modal styke */
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 4rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal h1 {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.modal p {
+  font-size: 1rem;
+}
+
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}

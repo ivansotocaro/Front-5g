@@ -38,7 +38,7 @@ $(document).on("click", "#go", function () {
       if (data.status == "success") {
         alert("¡Ingreso exitosamente!");
         localStorage.setItem("token", data.authorisation.token); 
-        window.location.href = "./page/dashboard.html";
+        window.location.href = "page/dashboard.html";
       } 
       
       if (data.status == "error") {
